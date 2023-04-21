@@ -37,7 +37,9 @@
 
           <ul class="list header-lists">
             <li>
-              <a class="header-link-text link" href="./index.html">Studio</a>
+              <a class="header-link-text current link" href="./index.html"
+                >Studio</a
+              >
             </li>
             <li>
               <a class="header-link-text link" href="./portfolio.html"
@@ -65,13 +67,16 @@
     </header>
 
     <main>
+      <!-- Banner section -->
       <section class="banner">
         <div class="container">
           <h1 class="banner-title">Effective Solutions for Your Business</h1>
-          <button class="banner-button" type="button">Order Service</button>
+          <button class="banner-button" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
-
+      <!-- Feature section -->
       <section class="section feature-section">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
@@ -130,7 +135,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Examples section -->
       <section class="section">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
@@ -147,7 +152,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Team section -->
       <section class="team-section section">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
@@ -399,7 +404,7 @@
           </ul>
         </div>
       </section>
-
+      <!-- Customer section -->
       <section class="section">
         <div class="container">
           <h2 class="section-title customer-title">Customers</h2>
@@ -498,5 +503,17 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal Window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8px" height="8px">
+            <use href="./images/icon.svg#close-black"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
